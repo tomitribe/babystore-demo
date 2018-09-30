@@ -66,5 +66,4 @@
             <version>${version.trapease}</version>
         </dependency>
     </dependencies>
-
 </project>
