@@ -23,35 +23,9 @@
                     <include>**/*.java</include>
                 </includes>
             </resource>
-            <resource>
-                <directory>${project.build.directory}/generated-sources/</directory>
-                <includes>
-                    <include>**/*.java</include>
-                </includes>
-            </resource>
         </resources>
-        <plugins>
-            <plugin>
-                <groupId>org.tomitribe</groupId>
-                <artifactId>trapease-maven-plugin</artifactId>
-                <version>${version.trapease}</version>
-                <configuration>
-                    <modelPackage>org.tomitribe.trapease.movie.model</modelPackage>
-                    <generateResources>true</generateResources>
-                    <resourcePackage>org.tomitribe.trapease.movie.rest</resourcePackage>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>gen</id>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
     </build>
+
     <dependencies>
         <dependency>
             <groupId>org.tomitribe</groupId>
@@ -68,6 +42,11 @@
             <groupId>org.tomitribe.trapease</groupId>
             <artifactId>model</artifactId>
             <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>0.15</version>
         </dependency>
     </dependencies>
 </project>
