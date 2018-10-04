@@ -81,7 +81,7 @@
                     <resourcePackage>org.tomitribe.trapease.movie.rest</resourcePackage>
                     <generateCmd>true</generateCmd>
                     <clientName>MovieClient</clientName>
-                    <programFile>${project.artifactId}</programFile>
+                    <programFile>trapease</programFile>
                 </configuration>
                 <executions>
                     <execution>
