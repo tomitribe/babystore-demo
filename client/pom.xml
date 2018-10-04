@@ -55,6 +55,7 @@
                 <configuration>
                     <modelPackage>org.tomitribe.trapease.movie.model</modelPackage>
                     <resourcePackage>org.tomitribe.trapease.movie.rest</resourcePackage>
+                    <resourceSuffix>Resource</resourceSuffix>
                     <generateClient>true</generateClient>
                     <clientName>MovieClient</clientName>
                 </configuration>
