@@ -30,6 +30,7 @@
         <module>model</module>
         <module>resources</module>
         <module>war</module>
+        <module>documentation</module>
     </modules>
 
     <!-- TODO - Update when going public -->
