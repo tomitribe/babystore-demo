@@ -30,3 +30,9 @@ Update Movie
 Count number of Movies
 ./trapease --url http://localhost:8080/trapease/api movies count 
 ```
+
+Call with signature authentication
+If you add --key-id, it will look for the key in ~/.ssh/key_id
+Replace the URL with the route from TAG
+./cli/target/trapease --verbose --key-id id_rsa --url http://localhost:8080/trapease-demo movies get-movies
+
