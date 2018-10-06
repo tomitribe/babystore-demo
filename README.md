@@ -39,7 +39,8 @@ Count number of Movies
 
 Call with signature authentication
 If you add --key-id, it will look for the key in ~/.ssh/key_id
-Replace the URL with the route from TAG
+Replace the <url> with the route path.
+  
 ```
-./cli/target/trapease --verbose --key-id id_rsa --url http://localhost:8080/trapease-demo movies get-movies
+./cli/target/trapease --verbose --key-id id_rsa --url <url> movies get-movies
 ```
