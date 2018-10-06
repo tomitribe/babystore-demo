@@ -42,5 +42,5 @@ If you add --key-id, it will look for the key in ~/.ssh/key_id
 Replace the <url> with the route path.
   
 ```
-./cli/target/trapease --verbose --key-id id_rsa --url <url> movies get-movies
+./trapease --verbose --key-id id_rsa --url <url> movies get-movies
 ```
