@@ -29,8 +29,8 @@
   <dependencies>
     <dependency>
       <groupId>org.tomitribe</groupId>
-      <artifactId>trapease-api</artifactId>
-      <version>${version.trapease}</version>
+      <artifactId>inget-api</artifactId>
+      <version>${version.inget}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.tomee</groupId>

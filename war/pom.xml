@@ -63,7 +63,7 @@
     <dependency>
       <groupId>org.tomitribe.trapease</groupId>
       <artifactId>resources</artifactId>
-      <version>${version.trapease}</version>
+      <version>${version.inget}</version>
     </dependency>
   </dependencies>
 </project>
