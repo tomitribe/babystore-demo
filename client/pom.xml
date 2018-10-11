@@ -80,8 +80,9 @@
         <dependency>
             <groupId>io.superbiz.baby</groupId>
             <artifactId>resources</artifactId>
-            <version>${version.inget}</version>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!-- Model is necessary here as client will need to exclude resources -->
         <dependency>
             <groupId>io.superbiz.baby</groupId>
             <artifactId>model</artifactId>
