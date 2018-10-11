@@ -16,7 +16,6 @@
  */
 package io.superbiz.baby.services;
 
-import com.github.javafaker.Faker;
 import io.superbiz.baby.model.Movie;
 
 import javax.ejb.Lock;
@@ -25,8 +24,6 @@ import javax.ejb.Singleton;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
-import java.util.Random;
 import java.util.Scanner;
 
 @Singleton

@@ -22,12 +22,6 @@
           <include>**/*.java</include>
         </includes>
       </resource>
-      <resource>
-        <directory>${project.build.directory}/generated-sources/</directory>
-        <includes>
-          <include>**/*.java</include>
-        </includes>
-      </resource>
     </resources>
   </build>
   <dependencies>
