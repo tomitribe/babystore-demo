@@ -29,26 +29,6 @@
         </includes>
       </resource>
     </resources>
-    <plugins>
-      <plugin>
-        <groupId>org.tomitribe.inget</groupId>
-        <artifactId>inget-maven-plugin</artifactId>
-        <version>${version.inget}</version>
-        <configuration>
-          <generateModel>true</generateModel>
-          <modelPackage>io.superbiz.baby.model</modelPackage>
-        </configuration>
-        <executions>
-          <execution>
-            <id>gen</id>
-            <phase>generate-sources</phase>
-            <goals>
-              <goal>generate</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
   </build>
   <dependencies>
     <dependency>
