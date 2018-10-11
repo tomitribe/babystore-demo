@@ -69,32 +69,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-shade-plugin</artifactId>-->
-                <!--<version>3.2.0</version>-->
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<phase>package</phase>-->
-                        <!--<goals>-->
-                            <!--<goal>shade</goal>-->
-                        <!--</goals>-->
-                        <!--<configuration>-->
-                            <!--<relocations>-->
-                                <!--<relocation>-->
-                                    <!--<shadedPattern>org.tomitribe.inget.</shadedPattern>-->
-                                    <!--<excludes>-->
-                                        <!--<exclude>io.superbiz.baby.**</exclude>-->
-                                        <!--<exclude>java.**</exclude>-->
-                                        <!--<exclude>javax.**</exclude>-->
-                                        <!--&lt;!&ndash;<exclude>META-INF/**</exclude>&ndash;&gt;-->
-                                    <!--</excludes>-->
-                                <!--</relocation>-->
-                            <!--</relocations>-->
-                        <!--</configuration>-->
-                    <!--</execution>-->
-                <!--</executions>-->
-            <!--</plugin>-->
         </plugins>
     </build>
     <dependencies>
@@ -107,7 +81,6 @@
             <groupId>io.superbiz.baby</groupId>
             <artifactId>resources</artifactId>
             <version>${version.inget}</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.superbiz.baby</groupId>

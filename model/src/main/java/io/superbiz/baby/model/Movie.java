@@ -18,7 +18,6 @@ package io.superbiz.baby.model;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-
 @XmlRootElement(name = "movie")
 public class Movie {
 
