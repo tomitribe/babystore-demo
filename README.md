@@ -1,4 +1,4 @@
-# Trapease Demo
+# BabyStore Demo
 
 Build the babystore-demo project with all modules.
 
