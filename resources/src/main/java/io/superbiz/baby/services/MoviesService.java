@@ -14,18 +14,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.tomitribe.trapease.movie.services;
+package io.superbiz.baby.services;
 
 import com.github.javafaker.Faker;
-import org.tomitribe.trapease.movie.model.Movie;
+import io.superbiz.baby.model.Movie;
 
 import javax.ejb.Lock;
 import javax.ejb.LockType;
 import javax.ejb.Singleton;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Random;
+import java.util.Scanner;
 
 @Singleton
 @Lock(LockType.READ)
@@ -75,11 +77,21 @@ public class MoviesService {
 
     public void updateMovie(Long id, Movie newMovieData) {
         Movie oldMovieData = find(id);
-        if (newMovieData.getTitle() != null) { oldMovieData.setTitle(newMovieData.getTitle());}
-        if (newMovieData.getDirector() != null) { oldMovieData.setDirector(newMovieData.getDirector());}
-        if (newMovieData.getYear() != -1) { oldMovieData.setYear(newMovieData.getYear());}
-        if (newMovieData.getGenre() != null) { oldMovieData.setGenre(newMovieData.getGenre());}
-        if (newMovieData.getRating() != -1) { oldMovieData.setRating(newMovieData.getRating());}
+        if (newMovieData.getTitle() != null) {
+            oldMovieData.setTitle(newMovieData.getTitle());
+        }
+        if (newMovieData.getDirector() != null) {
+            oldMovieData.setDirector(newMovieData.getDirector());
+        }
+        if (newMovieData.getYear() != -1) {
+            oldMovieData.setYear(newMovieData.getYear());
+        }
+        if (newMovieData.getGenre() != null) {
+            oldMovieData.setGenre(newMovieData.getGenre());
+        }
+        if (newMovieData.getRating() != -1) {
+            oldMovieData.setRating(newMovieData.getRating());
+        }
 
     }
 
@@ -93,22 +105,21 @@ public class MoviesService {
     }
 
     public void load() {
-        final Faker faker = new Faker(Locale.ENGLISH);
-        final Random random = new Random(System.nanoTime());
-
-        for (int i = 0; i < (5 + random.nextInt(20)); i++) {
-
+        InputStream is = Thread.currentThread().getContextClassLoader().getResourceAsStream("movies.txt");
+        Scanner scanner = new Scanner(is);
+        scanner.useDelimiter(",");
+        while (scanner.hasNextLine()) {
+            String[] line =  scanner.nextLine().split(",");
             addMovie(
                     new Movie(
-                            faker.book().title(),
-                            faker.book().author(),
-                            faker.book().genre(),
-                            random.nextInt(10),
-                            1960 + random.nextInt(50)
+                            line[0],
+                            line[1],
+                            line[2],
+                            Integer.parseInt(line[3]),
+                            Integer.parseInt(line[4])
                     )
             );
         }
-
     }
 
 }

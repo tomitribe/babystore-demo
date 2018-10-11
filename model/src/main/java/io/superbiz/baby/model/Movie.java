@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.tomitribe.trapease.movie.model;
+package io.superbiz.baby.model;
 
 import javax.xml.bind.annotation.XmlRootElement;
 

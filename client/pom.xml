@@ -20,12 +20,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.tomitribe.trapease</groupId>
-        <artifactId>trapease-demo</artifactId>
+        <groupId>io.superbiz.baby</groupId>
+        <artifactId>babystore-demo</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>org.tomitribe.trapease</groupId>
+    <groupId>io.superbiz.baby</groupId>
     <artifactId>client</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -53,8 +53,8 @@
                 <artifactId>inget-maven-plugin</artifactId>
                 <version>${version.inget}</version>
                 <configuration>
-                    <modelPackage>org.tomitribe.trapease.movie.model</modelPackage>
-                    <resourcePackage>org.tomitribe.trapease.movie.rest</resourcePackage>
+                    <modelPackage>io.superbiz.baby.model</modelPackage>
+                    <resourcePackage>io.superbiz.baby.rest</resourcePackage>
                     <resourceSuffix>Resource</resourceSuffix>
                     <generateClient>true</generateClient>
                     <clientName>MovieClient</clientName>
@@ -84,7 +84,7 @@
                                 <!--<relocation>-->
                                     <!--<shadedPattern>org.tomitribe.inget.</shadedPattern>-->
                                     <!--<excludes>-->
-                                        <!--<exclude>org.tomitribe.trapease.**</exclude>-->
+                                        <!--<exclude>io.superbiz.baby.**</exclude>-->
                                         <!--<exclude>java.**</exclude>-->
                                         <!--<exclude>javax.**</exclude>-->
                                         <!--&lt;!&ndash;<exclude>META-INF/**</exclude>&ndash;&gt;-->
@@ -104,13 +104,13 @@
             <version>${version.inget}</version>
         </dependency>
         <dependency>
-            <groupId>org.tomitribe.trapease</groupId>
+            <groupId>io.superbiz.baby</groupId>
             <artifactId>resources</artifactId>
             <version>${version.inget}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.tomitribe.trapease</groupId>
+            <groupId>io.superbiz.baby</groupId>
             <artifactId>model</artifactId>
             <version>${version.inget}</version>
         </dependency>

@@ -3,8 +3,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <artifactId>trapease-demo</artifactId>
-    <groupId>org.tomitribe.trapease</groupId>
+    <artifactId>babystore-demo</artifactId>
+    <groupId>io.superbiz.baby</groupId>
     <version>1.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -23,7 +23,7 @@
         <version>2.0.0-SNAPSHOT</version>
         <configuration>
           <outputDirectory>${openapi.directory}</outputDirectory>
-          <resourcePackages>org.tomitribe.trapease.movie.rest</resourcePackages>
+          <resourcePackages>io.superbiz.baby.rest</resourcePackages>
           <config>
             <swagger2markup.markupLanguage>ASCIIDOC</swagger2markup.markupLanguage>
             <swagger2markup.swaggerMarkupLanguage>ASCIIDOC</swagger2markup.swaggerMarkupLanguage>
@@ -45,7 +45,7 @@
         </executions>
         <dependencies>
           <dependency>
-            <groupId>org.tomitribe.trapease</groupId>
+            <groupId>io.superbiz.baby</groupId>
             <artifactId>resources</artifactId>
             <version>1.0-SNAPSHOT</version>
           </dependency>
@@ -96,7 +96,7 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.tomitribe.trapease</groupId>
+      <groupId>io.superbiz.baby</groupId>
       <artifactId>resources</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>

@@ -20,17 +20,15 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.tomitribe.trapease</groupId>
-    <artifactId>trapease-demo</artifactId>
+    <groupId>io.superbiz.baby</groupId>
+    <artifactId>babystore-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>org.tomitribe.trapease</groupId>
-  <artifactId>trapease-movie-demo</artifactId>
+  <groupId>io.superbiz.baby</groupId>
+  <artifactId>babystore</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
-
-  <name>war</name>
 
   <build>
     <plugins>
@@ -56,7 +54,7 @@
         <artifactId>tomee-maven-plugin</artifactId>
         <version>${version.tomee}</version>
         <configuration>
-          <context>trapease</context>
+          <context>${artifactId}</context>
         </configuration>
       </plugin>
     </plugins>
@@ -64,7 +62,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.tomitribe.trapease</groupId>
+      <groupId>io.superbiz.baby</groupId>
       <artifactId>resources</artifactId>
       <version>${version.inget}</version>
     </dependency>

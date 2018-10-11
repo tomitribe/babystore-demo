@@ -1,4 +1,4 @@
-package org.tomitribe.trapease.movie.rest; /**
+package io.superbiz.baby.rest; /**
  * Licensed to the Apache Software Foundation (ASF) under one or more
  * contributor license agreements.  See the NOTICE file distributed with
  * this work for additional information regarding copyright ownership.
@@ -15,8 +15,8 @@ package org.tomitribe.trapease.movie.rest; /**
  * limitations under the License.
  */
 
-import org.tomitribe.trapease.movie.model.Movie;
-import org.tomitribe.trapease.movie.services.MoviesService;
+import io.superbiz.baby.model.Movie;
+import io.superbiz.baby.services.MoviesService;
 
 import javax.ejb.EJB;
 import javax.enterprise.context.ApplicationScoped;
