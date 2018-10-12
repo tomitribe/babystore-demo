@@ -29,7 +29,6 @@
     <module>cli</module>
     <module>model</module>
     <module>resources</module>
-    <module>war</module>
     <module>documentation</module>
   </modules>
 

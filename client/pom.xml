@@ -81,6 +81,7 @@
             <groupId>io.superbiz.baby</groupId>
             <artifactId>resources</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <classifier>classes</classifier>
         </dependency>
         <!-- Model is necessary here as client will need to exclude resources -->
         <dependency>
