@@ -84,7 +84,6 @@
                     <resourceSuffix>Resource</resourceSuffix>
                     <cmdLineName>baby</cmdLineName>
                     <programFile>baby</programFile>
-                    <authentication>signature</authentication>
                 </configuration>
                 <executions>
                     <execution>
