@@ -57,7 +57,7 @@
                     <resourcePackage>io.superbiz.baby.rest</resourcePackage>
                     <resourceSuffix>Resource</resourceSuffix>
                     <generateClient>true</generateClient>
-                    <clientName>MovieClient</clientName>
+                    <clientName>BabyClient</clientName>
                 </configuration>
                 <executions>
                     <execution>

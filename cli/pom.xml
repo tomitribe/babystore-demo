@@ -80,7 +80,7 @@
                     <modelPackage>io.superbiz.baby.model</modelPackage>
                     <resourcePackage>io.superbiz.baby.rest</resourcePackage>
                     <generateCmd>true</generateCmd>
-                    <clientName>MovieClient</clientName>
+                    <clientName>BabyClient</clientName>
                     <resourceSuffix>Resource</resourceSuffix>
                     <cmdLineName>baby</cmdLineName>
                     <programFile>baby</programFile>
