@@ -50,6 +50,9 @@
                 <version>${version.tomee}</version>
                 <configuration>
                     <context>babystore</context>
+                    <tomeeAjpPort>8383</tomeeAjpPort>
+                    <tomeeShutdownPort>8282</tomeeShutdownPort>
+                    <tomeeHttpPort>8181</tomeeHttpPort>
                 </configuration>
             </plugin>
         </plugins>
