@@ -5,7 +5,7 @@ Build the babystore-demo project with all modules.
 ## Run the web app with the rest resources
 
 ```
-cd war && mvn tomee:run
+cd resources && mvn tomee:run
 ```
 
 ## CLI
