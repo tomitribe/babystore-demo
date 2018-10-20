@@ -79,11 +79,12 @@
                 <configuration>
                     <modelPackage>io.superbiz.baby.model</modelPackage>
                     <resourcePackage>io.superbiz.baby.rest</resourcePackage>
-                    <generateCmd>true</generateCmd>
+                    <generateCli>true</generateCli>
                     <clientName>BabyClient</clientName>
                     <resourceSuffix>Resource</resourceSuffix>
                     <cmdLineName>baby</cmdLineName>
-                    <programFile>baby</programFile>
+                    <cmdFileName>baby</cmdFileName>
+                    <authentication>signature</authentication>
                 </configuration>
                 <executions>
                     <execution>

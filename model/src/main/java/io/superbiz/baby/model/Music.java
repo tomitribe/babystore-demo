@@ -16,10 +16,6 @@
  */
 package io.superbiz.baby.model;
 
-import javax.xml.bind.annotation.XmlRootElement;
-
-
-@XmlRootElement(name = "music")
 public class Music {
 
     private long id;
